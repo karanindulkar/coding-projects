@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, black, #333);
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.container{
+    border: none;
+    border-radius: 10px;
+    max-width: 650px;
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+header h2{
+    color: rgb(50, 58, 65);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.input{
+    margin: 20px 0px 27px;
+}
+
+.input input{
+    padding: 10px 80px 10px 10px;
+}
+
+.pass-length .details{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+    font-size: 14px;
+}
+
+.pass-length input{
+    min-width: 240px;
+    color: black;
+    cursor: pointer;
+}
+.pass-settings{
+    width: 230px;
+}
+.pass-settings .options{
+    font-size: 14px;
+    margin: 20px 0 10px 0;
+}
+
+.pass-settings .options ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pass-settings .options ul li{
+    margin: 5px;
+}
+
+.pass-settings label{
+    font-size: 12px;
+    padding: 2px;
+}
+
+button{
+    margin-top: 30px;
+    padding: 15px 50px 15px 50px;
+    background: rgb(50, 58, 65);
+    color: azure;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(91, 102, 112);
+}
