@@ -14,32 +14,32 @@
             <h2>Password Generator</h2>
         </header>
         <div class="input">
-            <input type="text" placeholder="Password">
+            <input type="text" disabled>
         </div>
         <div class="pass-length">
             <div class="details">
                 <p>Password Length</p>
-                <span>10</span>
+                <span class="number">16</span>
             </div>
-            <input type="range" min="1" max="30" step="1" color="green">
+            <input type="range" min="1" max="30" step="1" class="slide">
         </div>
         <div class="pass-settings">
             <div class="options">
-                <p>Password Settings</p>
-                <ul>
-                    <li>
-                        <input type="checkbox" value="lowercase" class="low">
+                <p class="title">Password Settings</p>
+                <ul class="choices">
+                    <li class="choice">
+                        <input type="checkbox" value="lowercase">
                         <label for="lowercase">Lowercase(a-z)</label>
                     </li>
-                    <li>
+                    <li class="choice">
                         <input type="checkbox" value="uppercase">
                         <label for="uppercase">Uppercase(A-Z)</label>
                     </li>
-                    <li>
+                    <li class="choice">
                         <input type="checkbox" value="numbers">
                         <label for="numbers">Numbers(0-9)</label>
                     </li>
-                    <li>
+                    <li class="choice">
                         <input type="checkbox" value="symbols">
                         <label for="symbols">Symbols(!@%&)</label>
                     </li>

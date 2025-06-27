@@ -34,7 +34,12 @@ header h2{
 }
 
 .input input{
-    padding: 10px 80px 10px 10px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 3px;
+    width: 100%;
+    font-size: 12px;
+    font-style: bold;
 }
 
 .pass-length .details{
@@ -52,12 +57,12 @@ header h2{
 .pass-settings{
     width: 230px;
 }
-.pass-settings .options{
+.pass-settings .title{
     font-size: 14px;
     margin: 20px 0 10px 0;
 }
 
-.pass-settings .options ul{
+.pass-settings .options{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -67,6 +72,7 @@ header h2{
 
 .pass-settings .options ul li{
     margin: 5px;
+    list-style: none;
 }
 
 .pass-settings label{
