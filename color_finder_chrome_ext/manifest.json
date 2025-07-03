@@ -1,0 +1,15 @@
+{
+        "manifest_version": 3,
+        "name": "Color Finder",
+        "description": "Simple color finder extension. Easily pick any color from the screen, and copy them to use for your websites!",
+        "version": "1.0",
+        "action": {
+            "default_popup": "index.html"
+        },
+        "icons": {
+            "16": "icons/icons16.png",
+            "32": "icons/icons32.png",
+            "48": "icons/icons48.png",
+            "128": "icons/icons128.png"
+        }
+}

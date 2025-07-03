@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 350px;
+}
+
+.container :where(.picker, header, .all-colors, .color){
+    display: flex;
+    align-items: center;
+}
+
+.container .picker {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #d4fc79, #96e6a1);
+
+}
+
+.picker #color-picker {
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: mediumseagreen;
+    font-weight: bold;
+}
+
+.picker #color-picker:hover {
+    background: rgb(69, 141, 101);
+}
+
+.picked-colors {
+    margin: 10px 15px;
+}
+
+.picked-colors.hide {
+    display: none;
+}
+
+.picked-colors header {
+    justify-content: space-between;
+}
+
+.picked-colors .clear-all{
+    color: darkslategray;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.all-colors{
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.all-colors .color{
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100% / 3);
+}
+
+.all-colors .color .box{
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.all-colors .color .value{
+    font-size: 0.96rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
